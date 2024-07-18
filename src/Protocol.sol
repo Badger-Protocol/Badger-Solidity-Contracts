@@ -77,6 +77,7 @@ contract Protocol {
     }
 
     /// @notice This retrieves the addresses of contract added by the owner/creator.
+    /// @param _creator this is the address of the owner/creator whose contract addresses you want to get.
     /// @return _contractAddresses an array of address.
     function getCreatorAddresses(
         address _creator
