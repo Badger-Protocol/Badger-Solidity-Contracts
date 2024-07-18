@@ -13,6 +13,10 @@ contract Protocol {
     mapping(address => address[]) private s_ownerToContracts; //maps an owner to the contracts they have created.
     mapping(address => ContractDetail) private s_contractToDetail; //maps a contract to its details.
 
+    /// @notice This event is emitted when a new contract is added to the contract.
+    /// @param _contractAddress the address of the new contract added.
+    /// @param _creator the owner of the contract.
+    /// @param _type the type of contract that was added.
     event NewContractAdded(
         address _contractAddress,
         address _creator,
