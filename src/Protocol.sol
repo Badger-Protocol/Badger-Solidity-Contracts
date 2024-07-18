@@ -57,4 +57,10 @@ contract Protocol {
 
         emit NewContractAdded(_contractAddress, msg.sender, _type);
     }
+
+    function getCreatorAddresses(
+        address _creator
+    ) external returns (address[] memory _contractAddresses) {
+        _contractAddresses = s_ownerToContracts[_creator];
+    }
 }
