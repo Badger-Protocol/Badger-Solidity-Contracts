@@ -23,6 +23,7 @@ contract Protocol {
         ContractType _type
     );
 
+    /// @notice This are the diffrent types of contract the protocol creates and stores
     enum ContractType {
         erc20,
         erc721,
