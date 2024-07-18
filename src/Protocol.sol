@@ -84,6 +84,9 @@ contract Protocol {
         _contractAddresses = s_ownerToContracts[_creator];
     }
 
+    /// @notice This retrieves the contract details of a particular contract address.
+    /// @param _contractAddress the address of the contract you want to get its details.
+    /// @return _contractdetail the details of the contract queried.
     function getContractDetails(
         address _contractAddress
     ) public returns (ContractDetail memory _contractdetail) {
