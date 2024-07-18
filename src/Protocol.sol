@@ -14,7 +14,7 @@ contract Protocol {
     );
 
     enum ContractType {
-        erc2o,
+        erc20,
         erc721,
         erc1155,
         governance,
