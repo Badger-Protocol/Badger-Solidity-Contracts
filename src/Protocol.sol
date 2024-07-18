@@ -81,7 +81,7 @@ contract Protocol {
     /// @return _contractAddresses an array of address.
     function getCreatorAddresses(
         address _creator
-    ) external returns (address[] memory _contractAddresses) {
+    ) external view returns (address[] memory _contractAddresses) {
         _contractAddresses = s_ownerToContracts[_creator];
     }
 
@@ -90,7 +90,7 @@ contract Protocol {
     /// @return _contractdetail the details of the contract queried.
     function getContractDetails(
         address _contractAddress
-    ) public returns (ContractDetail memory _contractdetail) {
+    ) public view returns (ContractDetail memory _contractdetail) {
         _contractdetail = s_contractToDetail[_contractAddress];
     }
 }
