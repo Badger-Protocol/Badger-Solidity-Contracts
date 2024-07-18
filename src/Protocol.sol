@@ -43,6 +43,12 @@ contract Protocol {
         bool _isExist;
     }
 
+    /// @notice This function is responsible for adding new contract addresses to this protocol.
+    /// @param _contractAddress the address of the contract being added.
+    /// @param _name the name of the contract being added.
+    /// @param _abi the hash of the abi of the contract.
+    /// @param _type the type of this contract.
+    /// @param _sourceCode the bytes of the sourceCode.
     function addContract(
         address _contractAddress,
         string memory _name,
