@@ -76,6 +76,8 @@ contract Protocol {
         emit NewContractAdded(_contractAddress, msg.sender, _type);
     }
 
+    /// @notice This retrieves the addresses of contract added by the owner/creator.
+    /// @return _contractAddresses an array of address.
     function getCreatorAddresses(
         address _creator
     ) external returns (address[] memory _contractAddresses) {
