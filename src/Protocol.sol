@@ -1,8 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+// When a contract address has already be added to the contract
 error Protocol__AddressAlreadyExist(address _contracAddress);
 
+/**
+ * @title Badger Protocol
+ * @author @SuperDevFavour
+ * @notice This contract aims to serves as a database where all contract created on the badger platform will be stored and gotten to be interacted with.
+ */
 contract Protocol {
     mapping(address => address[]) private s_ownerToContracts; //maps an owner to the contracts they have created.
     mapping(address => ContractDetail) private s_contractToDetail; //maps a contract to its details.
