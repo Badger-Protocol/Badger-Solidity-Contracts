@@ -63,4 +63,10 @@ contract Protocol {
     ) external returns (address[] memory _contractAddresses) {
         _contractAddresses = s_ownerToContracts[_creator];
     }
+
+    function getContractDetails(
+        address _contractAddress
+    ) public returns (ContractDetail memory _contractdetail) {
+        _contractdetail = s_contractToDetail[_contractAddress];
+    }
 }
