@@ -1,4 +1,4 @@
-## Foundry
+## Badger Protocol
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
@@ -64,3 +64,7 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+## Addresses
+- Sepolia: `0xAABB33B951e638E19e714e6D07e64aBB2877E584`
+- Core Dao: `0x39833d01a18ebDB9f389F550182913ed884d44a3`
