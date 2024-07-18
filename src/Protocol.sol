@@ -32,6 +32,7 @@ contract Protocol {
         custom
     }
 
+    /// @notice This is a data structure of information stored about the contract added
     struct ContractDetail {
         address _creator;
         string _name;
