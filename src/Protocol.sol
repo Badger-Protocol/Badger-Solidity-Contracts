@@ -36,9 +36,9 @@ contract Protocol {
     struct ContractDetail {
         address _creator;
         string _name;
-        bytes32 _abi;
+        bytes _abi;
         ContractType _type;
-        bytes32 _sourceCode;
+        bytes _sourceCode;
         uint256 _createdAt;
         bool _isExist;
     }
@@ -52,9 +52,9 @@ contract Protocol {
     function addContract(
         address _contractAddress,
         string memory _name,
-        bytes32 _abi,
+        bytes memory _abi,
         ContractType _type,
-        bytes32 _sourceCode
+        bytes memory _sourceCode
     ) external {
         if (s_contractToDetail[_contractAddress]._isExist) {
             revert Protocol__AddressAlreadyExist(_contractAddress);

@@ -14,9 +14,9 @@ contract ProtocolTest is Test {
     function test_addContract() public {
         address _contractAddress = address(1);
         string memory _name = "USDT";
-        bytes32 _abi = bytes32(abi.encodePacked(_name));
+        bytes memory _abi = abi.encodePacked(_name);
         Protocol.ContractType _type = Protocol.ContractType(0);
-        bytes32 _sourceCode = bytes32(abi.encodePacked(_name));
+        bytes memory _sourceCode = abi.encodePacked(_name);
         vm.expectEmit();
         emit Protocol.NewContractAdded(_contractAddress, address(this), _type);
         protocol.addContract(_contractAddress, _name, _abi, _type, _sourceCode);
@@ -25,9 +25,9 @@ contract ProtocolTest is Test {
     function test_addContractRevert() public {
         address _contractAddress = address(1);
         string memory _name = "USDT";
-        bytes32 _abi = bytes32(abi.encodePacked(_name));
+        bytes memory _abi = abi.encodePacked(_name);
         Protocol.ContractType _type = Protocol.ContractType(0);
-        bytes32 _sourceCode = bytes32(abi.encodePacked(_name));
+        bytes memory _sourceCode = abi.encodePacked(_name);
         vm.expectEmit();
         emit Protocol.NewContractAdded(_contractAddress, address(this), _type);
         protocol.addContract(_contractAddress, _name, _abi, _type, _sourceCode);

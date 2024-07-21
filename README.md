@@ -48,7 +48,7 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/Protocol.s.sol:ProtocolScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
 ### Cast
@@ -66,5 +66,5 @@ $ cast --help
 ```
 
 ## Addresses
-- Sepolia: `0xAABB33B951e638E19e714e6D07e64aBB2877E584`
-- Core Dao: `0x39833d01a18ebDB9f389F550182913ed884d44a3`
+- Sepolia: `0x0fE5D8E9f64F13C5b9EF7040928259Bdf28E4F63`
+- Core Dao: `0x4AE7ae2ddeb53bE55aC1dF732DB6bd82fE375DBe`
