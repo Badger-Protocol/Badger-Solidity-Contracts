@@ -1,17 +1,14 @@
 ## Badger Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
 
-Foundry consists of:
+Welcome to **Badger Protocol**, this contract acts as a storage where all contracts deployed through badger are stored and recieved 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Documentation
+## Tools
 
-https://book.getfoundry.sh/
+- [**_Foundry_**](https://book.getfoundry.sh/)
+- [**_Solidity_**](https://soliditylang.org/)
 
 ## Usage
 
@@ -33,38 +30,20 @@ $ forge test
 $ forge fmt
 ```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
 ### Deploy
 
 ```shell
 $ forge script script/Protocol.s.sol:ProtocolScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
-### Cast
+## Frontend
 
-```shell
-$ cast <subcommand>
-```
+You can find the Badger Frontend - [HERE](https://github.com/PhantomOz/badger-)
 
-### Help
+## Backend
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+You can find the Badger Backend - [HERE](https://github.com/PhantomOz/badger-backend)
 
-## Addresses
-- Sepolia: `0x0fE5D8E9f64F13C5b9EF7040928259Bdf28E4F63`
-- Core Dao: `0x4AE7ae2ddeb53bE55aC1dF732DB6bd82fE375DBe`
+
+## Address
+- Core Dao: `0xD39C40708f6DCdDc7F7142cF2d869FEe741a8AEb`
